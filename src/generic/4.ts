@@ -6,8 +6,8 @@ class Component<T> {
   constructor(public props: T) {}
 }
 
-class Page extends Component {
-  pageInfo() {
+class Page extends Component<{ title: string }> {
+  pageInfo(): void {
     console.log(this.props.title);
   }
 }
