@@ -4,17 +4,17 @@
 */
 
 enum DaysOfWeek {
-  Monday = "working",
-  Tuesday = "working",
-  Wednesday = "working",
-  Thursday = "working",
-  Friday = "working",
-  Saturday = "day off",
-  Sunday = "day off",
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday,
 }
 
 const isWeekend = (day: DaysOfWeek) => {
-  return day;
+  return day === DaysOfWeek.Saturday || day === DaysOfWeek.Sunday;
 };
 
 console.log(isWeekend(DaysOfWeek.Monday));
